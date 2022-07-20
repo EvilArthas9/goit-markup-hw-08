@@ -1,0 +1,108 @@
+.clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+}
+
+.clients__title {
+    margin-bottom: 30px;
+
+    color: var(--text-color-black);
+    @include fonts(700, 28px, 1.17, 0.03em);
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    @include fonts(700, 36px, 1.17, 0.03em);
+    }
+}
+
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    @media screen and (min-width: $desktop) {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    }
+}
+
+.clients__items {
+    @media screen and (max-width: 767px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+        margin-right: 0;
+        }
+    
+    &:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        width: calc((100% - 3 * 30px) / 3);
+        margin-right: 30px;
+        margin-bottom: 30px;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+        &:nth-last-child(-n + 3) {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    fill: var(--social-color-grey);
+
+    transition-property: fill border-color;
+    @include animation;
+    
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+ 
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        width: 100%;
+    }
+
+    &:hover,
+    &:focus {
+        border-color: var(--text-color-blue);
+        outline: none;
+    }
+}
+
+.clients__icon {
+    transition-property: fill;
+    @include animation;
+
+    animation-name: rotateY;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: var(--text-color-blue);
+        animation-play-state: paused;
+    }
+}

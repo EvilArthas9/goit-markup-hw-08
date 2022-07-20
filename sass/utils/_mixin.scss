@@ -1,0 +1,12 @@
+@mixin animation() {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+}
+
+@mixin fonts($fw, $fs, $lh, $lt) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $lt;
+}

@@ -1,0 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--bg-color-white);
+}
+
+.no-scroll {
+  overflow: hidden;
+}

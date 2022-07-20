@@ -1,0 +1,17 @@
+// Header
+
+.website-logo {
+  color: var(--text-color-blue);
+  font-family: var(--secondary-font);
+  @include fonts(700, 26px, 1.19, 0.03em);
+  font-style: normal;
+  text-decoration: none;
+
+  &--black {
+    color: #000000;
+  }
+
+  &--white {
+    color: var(--text-color-white);
+  }
+}

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<!---------- Page Body ---------->
+
+<body>
+
+    <!---------- Header ---------->
+
+    <header class="header header__line">
+        <div class="container header-container">
+            <a class="website-logo header__website-logo">Web<span class="website-logo--black">Studio</span></a>
+
+            <!-- Header Navigation -->
+
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link active" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Header Contacts -->
+
+            <div class="header-contacts">
+                <ul class="header-contacts__list">
+                    <li class="header-contacts__item">
+                        <a class="header-contacts__link" href="#">
+                            <svg class="header-contacts__icon" width="16" height="12">
+                                <use href="./images/icon.svg#icon-envelope"></use>
+                            </svg>
+                            <span>info@devstudio.com</span>
+                        </a>
+                    </li>
+                    <li class="header-contacts__item">
+                        <a class="header-contacts__link" href="#">
+                            <svg class="header-contacts__icon" width="10" height="16">
+                                <use href="./images/icon.svg#icon-smartphone"></use>
+                            </svg>
+                            <span>+38 096 111 11 11</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Mobile Button -->
+
+            <button class="mobile-btn is-open" type="button" aria-expanded="false" aria-controls="mobile-id"
+                data-menu-button>
+                <svg class="mobile-btn__icon" width="24" height="16" aria-label="Переключатель мобильного меню">
+                    <use class="icon-open" href="./images/icon.svg#icon-open-menu"></use>
+                    <use class="icon-close" href="./images/icon.svg#icon-close-menu"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!---------- Main ---------->
+
+    <main>
+        <!-- Portfolio Section -->
+        <section class="section">
+            <div class="container">
+                <h1 class="hidden-element">Лекало робот</h1>
+                <ul class="section__list">
+                    <li class="section__item">
+                        <button class="section__button">Все</button>
+                    </li>
+                    <li class="section__item">
+                        <button class="section__button">Веб-сайты</button>
+                    </li>
+                    <li class="section__item">
+                        <button class="section__button">Приложения</button>
+                    </li>
+                    <li class="section__item">
+                        <button class="section__button">Дизайн</button>
+                    </li>
+                    <li class="section__item">
+                        <button class="section__button">Маркетинг</button>
+                    </li>
+                </ul>
+                <ul class="grid">
+                    <li class="grid__item">
+                        <a class="grid__link" href="">
+                            <div class="grid__container">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portf-1_xl.jpg 1x, ./images/portfolio/portf-1_xl@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portf-1_m.jpg 1x, ./images/portfolio/portf-1_m@2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portf-1_s.jpg 1x, ./images/portfolio/portf-1_s@2x.jpg 2x">
+                                    <img src="./images/portfolio/portf-1_xl.jpg" alt="Ноутбук" width="450" height="294">
+                                </picture>
+                                <p class="grid__paragraph">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала
+                                    и сервисов. Все это позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="grid__block">
+                                <h2 class="grid__title">
+                                    Технокряк
+                                </h2>
+                                <p class="grid__description">
+                                    Веб-сайт
+                                </p>
+                            </div>
+                            </img>
+                        </a>
+                    </li>
+                    <li class="grid__item">
+                        <a class="grid__link" href="">
+                            <div class="grid__container">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portf-2_xl.jpg 1x, ./images/portfolio/portf-2_xl@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portf-2_m.jpg 1x, ./images/portfolio/portf-2_m@2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portf-2_s.jpg 1x, ./images/portfolio/portf-2_s@2x.jpg 2x">
+                                    <img src="./images/portfolio/portf-2_xl.jpg" alt="Ноутбук" width="450" height="294">
+                                </picture>
+                                <p class="grid__paragraph">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала
+                                    и сервисов. Все это позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="grid__block">
+                                <h2 class="grid__title">
+                                    Постер New Orlean vs Golden Star
+                                </h2>
+                                <p class="grid__description">
+                                    Дизайн
+                                </p>
+                            </div>
+                            </img>
+                        </a>
+                    </li>
+                    <li class="grid__item">
+                        <a class="grid__link" href="">
+                            <div class="grid__container">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portf-3_xl.jpg 1x, ./images/portfolio/portf-3_xl@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portf-3_m.jpg 1x, ./images/portfolio/portf-3_m@2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portf-3_s.jpg 1x, ./images/portfolio/portf-3_s@2x.jpg 2x">
+                                    <img src="./images/portfolio/portf-3_xl.jpg" alt="Ноутбук" width="450" height="294">
+                                </picture>
+                                <p class="grid__paragraph">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала
+                                    и сервисов. Все это позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="grid__block">
+                                <h2 class="grid__title">
+                                    Ресторан Seafood
+                                </h2>
+                                <p class="grid__description">
+                                    Приложение
+                                </p>
+                            </div>
+                            </img>
+                        </a>
+                    </li>
+                    <li class="grid__item">
+                        <a class="grid__link" href="">
+                            <div class="grid__container">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portf-4_xl.jpg 1x, ./images/portfolio/portf-4_xl@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portf-4_m.jpg 1x, ./images/portfolio/portf-4_m@2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portf-4_s.jpg 1x, ./images/portfolio/portf-4_s@2x.jpg 2x">
+                                    <img src="./images/portfolio/portf-4_xl.jpg" alt="Ноутбук" width="450" height="294">
+                                </picture>
+                                <p class="grid__paragraph">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала
+                                    и сервисов. Все это позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="grid__block">
+                                <h2 class="grid__title">
+                                    Проект Prime
+                                </h2>
+                                <p class="grid__description">
+                                    Маркетинг
+                                </p>
+                            </div>
+                            </img>
+                        </a>
+                    </li>
+                    <li class="grid__item">
+                        <a class="grid__link" href="">
+                            <div class="grid__container">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portf-5_xl.jpg 1x, ./images/portfolio/portf-5_xl@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portf-5_m.jpg 1x, ./images/portfolio/portf-5_m@2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portf-5_s.jpg 1x, ./images/portfolio/portf-5_s@2x.jpg 2x">
+                                    <img src="./images/portfolio/portf-5_xl.jpg" alt="Ноутбук" width="450" height="294">
+                                </picture>
+                                <p class="grid__paragraph">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала
+                                    и сервисов. Все это позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="grid__block">
+                                <h2 class="grid__title">
+                                    Проект Boxes
+                                </h2>
+                                <p class="grid__description">
+                                    Приложение
+                                </p>
+                            </div>
+                            </img>
+                        </a>
+                    </li>
+                    <li class="grid__item">
+                        <a class="grid__link" href="">
+                            <div class="grid__container">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portf-6_xl.jpg 1x, ./images/portfolio/portf-6_xl@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portf-6_m.jpg 1x, ./images/portfolio/portf-6_m@2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portf-6_s.jpg 1x, ./images/portfolio/portf-6_s@2x.jpg 2x">
+                                    <img src="./images/portfolio/portf-6_xl.jpg" alt="Ноутбук" width="450" height="294">
+                                </picture>
+                                <p class="grid__paragraph">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала
+                                    и сервисов. Все это позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="grid__block">
+                                <h2 class="grid__title">
+                                    Inspiration has no Borders
+                                </h2>
+                                <p class="grid__description">
+                                    Веб-сайт
+                                </p>
+                            </div>
+                            </img>
+                        </a>
+                    </li>
+                    <li class="grid__item">
+                        <a class="grid__link" href="">
+                            <div class="grid__container">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portf-7_xl.jpg 1x, ./images/portfolio/portf-7_xl@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portf-7_m.jpg 1x, ./images/portfolio/portf-7_m@2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portf-7_s.jpg 1x, ./images/portfolio/portf-7_s@2x.jpg 2x">
+                                    <img src="./images/portfolio/portf-7_xl.jpg" alt="Ноутбук" width="450" height="294">
+                                </picture>
+                                <p class="grid__paragraph">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала
+                                    и сервисов. Все это позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="grid__block">
+                                <h2 class="grid__title">
+                                    Издание Limited Edition
+                                </h2>
+                                <p class="grid__description">
+                                    Дизайн
+                                </p>
+                            </div>
+                            </img>
+                        </a>
+                    </li>
+                    <li class="grid__item">
+                        <a class="grid__link" href="">
+                            <div class="grid__container">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portf-8_xl.jpg 1x, ./images/portfolio/portf-8_xl@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portf-8_m.jpg 1x, ./images/portfolio/portf-8_m@2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portf-8_s.jpg 1x, ./images/portfolio/portf-8_s@2x.jpg 2x">
+                                    <img src="./images/portfolio/portf-8_xl.jpg" alt="Ноутбук" width="450" height="294">
+                                </picture>
+                                <p class="grid__paragraph">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала
+                                    и сервисов. Все это позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="grid__block">
+                                <h2 class="grid__title">
+                                    Проект LAB
+                                </h2>
+                                <p class="grid__description">
+                                    Маркетинг
+                                </p>
+                            </div>
+                            </img>
+                        </a>
+                    </li>
+                    <li class="grid__item">
+                        <a class="grid__link" href="">
+                            <div class="grid__container">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portf-9_xl.jpg 1x, ./images/portfolio/portf-9_xl@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portf-9_m.jpg 1x, ./images/portfolio/portf-9_m@2x.jpg 2x">
+                                    <source media="(max-width: 76px)"
+                                        srcset="./images/portfolio/portf-9_s.jpg 1x, ./images/portfolio/portf-9_s@2x.jpg 2x">
+                                    <img src="./images/portfolio/portf-9_xl.jpg" alt="Ноутбук" width="450" height="294">
+                                </picture>
+                                <p class="grid__paragraph">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала
+                                    и сервисов. Все это позволит посетителю получить
+                                    исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="grid__block">
+                                <h2 class="grid__title">
+                                    Growing Business
+                                </h2>
+                                <p class="grid__description">
+                                    Приложение
+                                </p>
+                            </div>
+                            </img>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!---------- Footer ---------->
+
+    <footer class="footer">
+        <div class="container footer-container">
+
+            <!-- Footer Address -->
+
+            <div class="adress-container">
+                <a class="website-logo footer__website-logo">Web<span class="website-logo--white">Studio</span></a>
+                <address class="addres" id="contacts">
+                    <ul class="addres__list">
+                        <li class="addres__item">
+                            <a class="addres__link addres__link--white"
+                                href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17">г.
+                                Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="addres__item">
+                            <a class="addres__link" href="#">info@example.com</a>
+                        </li>
+                        <li class="addres__item">
+                            <a class="addres__link" href="#">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+
+            <!-- Footer Join -->
+
+            <div class="join">
+                <h2 class="join__title">присоединяйтесь</h2>
+                <ul class="join__list">
+                    <li class="join__item">
+                        <a class="join__link" href="">
+                            <svg class="join__icon" width="20" height="20">
+                                <use href="./images/icon.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join__item">
+                        <a class="join__link" href="">
+                            <svg class="join__icon" width="20" height="20">
+                                <use href="./images/icon.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join__item">
+                        <a class="join__link" href="">
+                            <svg class="join__icon" width="20" height="20">
+                                <use href="./images/icon.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join__item">
+                        <a class="join__link" href="">
+                            <svg class="join__icon" width="20" height="20">
+                                <use href="./images/icon.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Footer Subscription -->
+
+            <form class="subscription">
+                <label class="subscription__label" for="email-distribution">
+                    <span class="subscription__text">Подпишитесь на рассылку</span>
+                    <input class="subscription__input" type="email" name="distribution" placeholder="E-mail"
+                        id="email-distribution">
+                </label>
+                <button class="subscription__btn" type="submit">
+                    <span class="subscription__press">Подписаться</span>
+                    <svg class="subscription__icon" width="24px" height="24px">
+                        <use href="./images/icon.svg#icon-button-send"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </footer>
+
+    <!---------- Mobile Menu ---------->
+
+    <div class="mobile" id="mobile-id" data-menu>
+        <nav class="mobile__nav">
+            <ul class="mobile__list">
+                <li class="mobile__item">
+                    <a class="mobile__link" href="./index.html">Студия</a>
+                </li>
+                <li class="mobile__item">
+                    <a class="mobile__link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile__item">
+                    <a class="mobile__link" href="">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mobile__adress">
+            <ul class="mobile__adress-list">
+                <li class="mobile__adress-item">
+                    <a class="mobile__adress-link" href="">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile__adress-item">
+                    <a class="mobile__adress-link" href="">info@devstudio.com</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="mobile__socials">
+            <li class="mobile__socials-list">
+                <a class="mobile__socials-link" href="">Instagram</a>
+            </li>
+            <li class="mobile__socials-list">
+                <a class="mobile__socials-link" href="">Twitter</a>
+            </li>
+            <li class="mobile__socials-list">
+                <a class="mobile__socials-link" href="">Facebook</a>
+            </li>
+            <li class="mobile__socials-list">
+                <a class="mobile__socials-link" href="">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+.modal__paragraph {
+  margin-bottom: 15px;
+
+  color: var(--text-color-black);
+  @include fonts(700, 20px, 1.15, 0.03em);
+  text-align: center;
+}
+
+.modal__label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal__text {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--text-color-grey);
+
+  @include fonts(400, 12px, 1.16, 0.01em);
+}
+
+.modal__container {
+  position: relative;
+}
+
+.modal__input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition-property: border-color;
+  @include animation;
+
+  &:hover,
+  &:focus {
+    border-color: var(--text-color-blue);
+  }
+}
+
+.modal__icon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  display: inline-block;
+
+  transition-property: fill;
+  @include animation;
+
+  .modal__input:hover + &,
+  .modal__input:focus + & {
+    fill: var(--text-color-blue);
+  }
+}
+
+.modal__comment {
+  width: 100%;
+  height: 120px;
+  padding-top: 12px;
+  padding-left: 16px;
+
+  resize: none;
+
+  color: var(--text-color-grey);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+
+  transition-property: border-color;
+  @include animation;
+
+  &:hover,
+  &:focus {
+    border-color: var(--text-color-blue);
+  }
+}
+
+.modal__policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.modal__checkbox:checked,
+.modal__checkbox {
+  appearance: none;
+}
+
+.modal__checkbox + .modal__verify {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.modal__checkbox:checked + .modal__verify {
+  background-color: var(--text-color-blue);
+  background-image: url('../images/modal/checkbox-icon.svg');
+  background-repeat: no-repeat;
+  border-color: transparent;
+}
+
+.modal__mailing {
+  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+    @include fonts(400, 12px, 1.17, 0.03em);
+    color: var(--text-color-grey);
+  }
+  @media screen and (min-width: $desktop) {
+    color: var(--text-color-grey);
+    @include fonts(400, 14px, 1.71, 0.03em);
+  }
+}
+
+.modal__link {
+  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+    color: var(--text-color-blue);
+    @include fonts(400, 12px, 1.17, 0.03em);
+    text-decoration: underline;
+  }
+
+  @media screen and (min-width: $desktop) {
+    color: var(--text-color-blue);
+    @include fonts(400, 14px, 1.71, 0.03em);
+    text-decoration: underline;
+  }
+}
